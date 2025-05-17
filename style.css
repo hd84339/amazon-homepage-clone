@@ -279,3 +279,61 @@ ul a {
     text-align: center;
    
 }
+
+
+/* Mobile-friendly base */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container to keep content centered and with some padding */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* Responsive header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* Make images scale properly */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make product cards responsive */
+.product-card {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+}
+
+/* Use flex-wrap for product grid */
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Adjust typography for smaller screens */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .products-grid {
+    flex-direction: column;
+  }
+  .product-card {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
